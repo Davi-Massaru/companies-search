@@ -23,5 +23,5 @@ COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
 RUN iris start IRIS \
-	&& iris session IRIS < iris.script \
+    && iris session IRIS < iris.script \
     && iris stop IRIS quietly
